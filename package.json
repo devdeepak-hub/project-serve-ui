@@ -7,10 +7,16 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts":{
-	  "bootstrap" : "lerna bootstrap"
+  "scripts": {
+    "storybook": "start-storybook",
+    "bootstrap": "lerna bootstrap"
   },
   "devDependencies": {
-	  "lerna": "^3.21.0"
+    "@babel/core": "^7.9.6",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",
+    "lerna": "^3.21.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
