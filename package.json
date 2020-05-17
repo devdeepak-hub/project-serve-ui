@@ -1,6 +1,10 @@
 {
   "name": "project-serve-ui",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "private": true,
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
 }
