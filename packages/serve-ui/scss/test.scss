@@ -1,0 +1,14 @@
+// @import '~bootstrap/scss/bootstrap';
+@use '~bootstrap-sass-use-migration/scss/variables';
+@use '~bootstrap-sass-use-migration/scss/mixins';
+
+@use '~bootstrap-sass-use-migration/scss/reboot';
+@use '~bootstrap-sass-use-migration/scss/buttons';
+
+//@use 'usetest' with ($bg-color:yellow);
+
+
+.red {
+	color: white;
+	line-height : 200px;
+}

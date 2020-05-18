@@ -1,29 +1,25 @@
 {
-  "name": "project-serve-ui",
-  "version": "0.0.1",
-  "private": true,
+  "name": "serve-ui",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "storybook": "lerna run storybook --parallel",
-    "bootstrap": "lerna bootstrap"
+  "scripts":{
+    "storybook":"start-storybook -p 12001",
+    "storybook:debug": "yarn storybook --debug-webpack"
+  },
+  "dependencies": {
+    "bootstrap-sass-use-migration": "^1.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@storybook/html": "^5.3.18",
-    "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
-    "lerna": "^3.21.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
+
   }
 }
