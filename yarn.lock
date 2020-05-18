@@ -1921,6 +1921,13 @@
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
+"@storybook/addon-console@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-console/-/addon-console-1.2.1.tgz#f338401661b4636118b13839848061e996d4e104"
+  integrity sha512-2iDbDTipWonvRpIqLLntfhCGvawFFvoG1xyErpyL7K/HRdQ1zzIvR1Qm83S7TK8Vg+RzZWm4wcDbxx7WOsFCNg==
+  dependencies:
+    global "^4.3.2"
+
 "@storybook/addon-knobs@^5.3.18":
   version "5.3.18"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.3.18.tgz#60365bb179699cd8dc91df8be947469266012847"
@@ -3558,11 +3565,6 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
-
-bootstrap-sass-use-migration@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/bootstrap-sass-use-migration/-/bootstrap-sass-use-migration-1.0.3.tgz#0c6f998a6762c3b864201e3ba97a21aa7887bb21"
-  integrity sha512-BP78pUi40PAuhNZdqmPepW4i6HvdqKmZ3QCuFqUqUPH/FQgA7vbbVRFU5cFHreqOQFe0Fc3J2K0YMvZX4NBPAw==
 
 boxen@^4.1.0:
   version "4.2.0"
