@@ -20,6 +20,7 @@ module.exports = {
 		// Return the altered config
     		return config;
   	},
+	addons: ['@storybook/addon-storysource']
 	
 };
 

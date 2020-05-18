@@ -1,6 +1,12 @@
 import '../scss/test.scss';
 
-export default { title: 'Button' };
+import centered from '@storybook/addon-centered/html';
+
+
+export default { 
+	title: 'Button',
+	decorators:[centered]
+};
 
 export const withText = () => '<button class="btn btn-primary red">Hello World</button>';
 
