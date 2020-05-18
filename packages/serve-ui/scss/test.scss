@@ -1,14 +1,31 @@
-// @import '~bootstrap/scss/bootstrap';
-@use '~bootstrap-sass-use-migration/scss/variables';
-@use '~bootstrap-sass-use-migration/scss/mixins';
+@use 'vendor/normalize';
 
-@use '~bootstrap-sass-use-migration/scss/reboot';
-@use '~bootstrap-sass-use-migration/scss/buttons';
 
-//@use 'usetest' with ($bg-color:yellow);
+/**
+ * outline on focus selector remove the dotted border on button 
+ * padding will stop the movement of text when button is clicked
+ */
+.btn {
+	display : inline-block;
+	text-align : center;
+	text-decoration : none;
+	user-select : none;
+	border : 0;
+	background-color : cyan;
+	padding : 16px;
+
+	&:focus{
+		outline : none;
+	}
+
+	&:active {
+		border : 1px solid red;
+	}
+
+}
 
 
 .red {
-	color: white;
+	color: black;
 	line-height : 200px;
 }

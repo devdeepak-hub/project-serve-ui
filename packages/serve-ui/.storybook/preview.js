@@ -1,3 +1,5 @@
+import '@storybook/addon-console';
+
 import { addParameters } from '@storybook/html';
 
 addParameters({
