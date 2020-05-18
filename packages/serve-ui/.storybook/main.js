@@ -20,7 +20,13 @@ module.exports = {
 		// Return the altered config
     		return config;
   	},
-	addons: ['@storybook/addon-storysource']
+	addons: [
+        	'@storybook/addon-knobs',
+		'@storybook/addon-actions',		
+        	'@storybook/addon-viewport',
+        	'@storybook/addon-storysource',
+		'@storybook/addon-a11y'
+	]
 	
 };
 
