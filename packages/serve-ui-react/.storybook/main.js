@@ -4,9 +4,11 @@ const custom = require('../webpack.config.js');
 
 
 module.exports = {
-	stories: ['../**/*.stories.[tj]s'],
+	stories: ['../stories/**/*.stories.[tj]s'],
 
 	webpackFinal: (config) => {
+
+
     		return { 
 			...config, 
 			module: { 
@@ -26,7 +28,7 @@ module.exports = {
         '@storybook/addon-knobs',
 	'@storybook/addon-actions',		
         '@storybook/addon-viewport',
-        '@storybook/addon-storysource',
+	'@storybook/addon-storysource',
 	'@storybook/addon-a11y'
 	]
 	

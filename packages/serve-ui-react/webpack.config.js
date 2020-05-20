@@ -15,6 +15,11 @@ module.exports = {
                 		loader: "babel-loader",
                 		options: { presets: ["@babel/env"] }
             		},
+			{
+        			test: /\.stories\.jsx?$/,
+        			loaders: [require.resolve('@storybook/addon-storysource/loader')],
+        			enforce: 'pre',
+      			},
 
 			{
                 		test: /\.s[ac]ss$/i,
