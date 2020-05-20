@@ -19,4 +19,29 @@
 
 `addons: [@storybook/addon-docs]` :  useful for documenting the component. *`info` and `notes` addons are deprecated*.
 
+# Libraries to learn from
+
+* [Materailize React components with storybook setup](https://github.com/react-materialize/react-materialize)
+
+# SASS PACKAGES
+
+[List of Sass packages](https://github.com/Famolus/awesome-sass)
+
+
+## Grid
+
+* susy -> this one is preferred over gridlex, [Docs](https://www.oddbird.net/2017/06/28/susy3/)
+* gridlex
+* [Blog](https://css-tricks.com/build-web-layouts-easily-susy/)
+
+
+
+
+## Media Queries
+
+* [sass-media queries](http://rafalbromirski.github.io/sass-mediaqueries/)
+
+
+
+
 

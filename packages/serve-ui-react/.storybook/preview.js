@@ -1,6 +1,6 @@
 import '@storybook/addon-console';
 
-import { addParameters } from '@storybook/html';
+import { addParameters } from '@storybook/react';
 
 addParameters({
   options: {

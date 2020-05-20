@@ -3,7 +3,7 @@ This package serve the following purpose:
 * Wide range of components styles and effects are provided that are not present in single UI library,
 * No naming conflict for styles, user can change the name of the classes as needed.
 * Full documentation with highly customizable components.
-* Easy integration to react (for now).
+* Easy integration to Javascript libraries (only react is supported for now).
 
 
 
@@ -14,5 +14,10 @@ This package serve the following purpose:
 # My notes to remember things before publish
 
 npm will ignore the `.gitignore` file if `.npmignore` is present, So make sure files should not get included in package if they are not suppose to.
+
+
+* Add build process, read from other sass libraries.
+* Add typescript support.
+
 
 
