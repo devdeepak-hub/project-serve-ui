@@ -4,9 +4,11 @@
   "private": true,
   "main": "index.js",
   "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "scripts": {
     "storybook": "lerna run storybook --parallel",
     "bootstrap": "lerna bootstrap"
@@ -27,6 +29,7 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "jest": "^26.0.1",
     "lerna": "^3.21.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

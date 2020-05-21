@@ -1,2 +1,11 @@
-@use '~serve-ui/scss/test';
+@use '~serve-ui/scss/index' as serve;
+
+// 
+
+.btn {
+	@include serve.button-flat;
+	// @include serve.effect
+}
+
+
 

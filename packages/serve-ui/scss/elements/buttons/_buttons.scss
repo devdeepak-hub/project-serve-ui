@@ -1,0 +1,60 @@
+/**
+ * outline on focus selector remove the dotted border on button 
+ * padding will stop the movement of text when button is clicked
+ */
+
+%focus-on {
+	&:focus {
+		outline : none;
+		border : 1px solid yellow;
+	}
+}
+
+%focus-off {
+	&:focus {
+		border : 2px dotted blue;
+	}
+}
+
+$focus : '%focus-off';
+
+@mixin button-flat($bg-color:transparent) {
+	display : inline-block;
+	text-align : center;
+	text-decoration : none;
+	border : 1px solid purple;
+	background-color : $bg-color;
+	padding : 16px;
+
+	@extend #{$focus};
+}
+
+/*
+
+serve.generateFlatButton( $primary-color: red, $effect : '%focus-on'
+
+.btn {
+	display : inline-block;
+	text-align : center;
+	text-decoration : none;
+	user-select : none;
+	border : 1px solid blue;
+	background-color : transparent;
+	padding : 16px;
+
+	&:focus{
+		outline : none;
+	}
+
+	&:active {
+		border : 1px solid red;
+	}
+
+}
+
+
+.red {
+	color: black;
+	line-height : 200px;
+}
+*/
