@@ -3,6 +3,8 @@
  * padding will stop the movement of text when button is clicked
  */
 
+// import theme variables from _theme.scss
+
 %focus-on {
 	&:focus {
 		outline : none;
@@ -18,7 +20,14 @@
 
 $focus : '%focus-off';
 
-@mixin button-flat($bg-color:transparent) {
+/**
+* Round button : get border-radius from function 
+* * if round-button is true then use 4px
+* * if round-button is some value then use that value for border radius
+* * if round-button is not given do not invoke function, don't include border-radius
+*/
+
+@mixin button-flat($bg-color:transparent, $round-button:'') {
 	display : inline-block;
 	text-align : center;
 	text-decoration : none;
@@ -29,7 +38,20 @@ $focus : '%focus-off';
 	@extend #{$focus};
 }
 
+
+@mixin generateFlatButton($class-name:'flat-btn', $bg-color:transparent) {
+
+   .#{$class-name} {
+        @include button-flat($bg-color: $bg-color);
+    }
+}
+
+
+
+
 /*
+
+Find the way to handle nested elements component generation
 
 serve.generateFlatButton( $primary-color: red, $effect : '%focus-on'
 

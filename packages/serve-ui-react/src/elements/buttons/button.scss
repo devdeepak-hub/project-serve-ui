@@ -1,11 +1,13 @@
 @use '~serve-ui/scss/index' as serve;
-
-// 
+ 
 
 .btn {
 	@include serve.button-flat;
-	// @include serve.effect
 }
+
+@include serve.generateFlatButton($bg-color: yellow);
+
+@include serve.generateFlatButton($class-name : 'btn-jumbo', $bg-color:teal)
 
 
 

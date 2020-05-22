@@ -6,7 +6,10 @@ import { withA11y } from "@storybook/addon-a11y";
 
 import { Button } from '@serve-ui/react';
 
-
+function handleClick() {
+    console.log('Button is Clicked');
+    action('button-click');
+}
 
 export default {
   title: "Elements/Button",
@@ -14,7 +17,7 @@ export default {
 };
 
 export const Basic = () => (
-        <button>This is a button</button>
+        <button className="flat-btn" onClick={handleClick}>This is a button</button>
 );
 
 export const StyledButton = () => {
@@ -22,4 +25,11 @@ export const StyledButton = () => {
                 <Button className="btn"></Button>
         );
 }
+
+export const FlatButton = () => {
+    return (
+        <Button className="btn-jumbo">Jumbo Flat Button</Button>
+    );
+}
+
 
