@@ -12,7 +12,9 @@
   "scripts": {
     "storybook": "lerna run storybook --parallel",
     "bootstrap": "lerna bootstrap",
-    "test": "lerna run test"
+    "test:serve-ui": "lerna exec --scope 'serve-ui' yarn test",
+    "test:serve-ui/react":"lerna exec --scope '@serve-ui/react' yarn test",
+    "test":"yarn test:serve-ui && yarn test:serve-ui/react"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

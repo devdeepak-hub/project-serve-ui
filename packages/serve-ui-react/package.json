@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "test":"jest",
     "storybook": "start-storybook -p 12001",
     "storybook:debug": "yarn storybook --debug-webpack"
   },
   "dependencies": {
-    "serve-ui":"^0.0.1"
+    "serve-ui": "^0.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -23,6 +24,7 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "jest": "^26.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sass": "^1.26.5",
