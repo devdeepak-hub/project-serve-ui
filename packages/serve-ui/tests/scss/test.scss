@@ -1,0 +1,8 @@
+@import 'true';
+
+@include describe('basic sass-true setup test') {
+    @include it('sass-true test 1') {
+        @include assert-equal(4,4);
+    }
+}
+

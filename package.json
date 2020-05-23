@@ -13,8 +13,8 @@
     "storybook": "lerna run storybook --parallel",
     "bootstrap": "lerna bootstrap",
     "test:serve-ui": "lerna exec --scope 'serve-ui' yarn test",
-    "test:serve-ui/react":"lerna exec --scope '@serve-ui/react' yarn test",
-    "test":"yarn test:serve-ui && yarn test:serve-ui/react"
+    "test:serve-ui/react": "lerna exec --scope '@serve-ui/react' yarn test",
+    "test": "yarn test:serve-ui && yarn test:serve-ui/react"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -39,6 +39,7 @@
     "react-dom": "^16.13.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "sass-true": "^5.0.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"

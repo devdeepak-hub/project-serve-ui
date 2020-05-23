@@ -19,9 +19,13 @@
 
 `addons: [@storybook/addon-docs]` :  useful for documenting the component. *`info` and `notes` addons are deprecated*.
 
+
+
 # Libraries to learn from
 
 * [Materailize React components with storybook setup](https://github.com/react-materialize/react-materialize)
+
+
 
 # SASS PACKAGES
 
@@ -34,6 +38,9 @@
 * gridlex
 * [Blog](https://css-tricks.com/build-web-layouts-easily-susy/)
 
+## Sass Unit Testing
+
+**sass-true** : use `jest --env=node` to run the tests, otherwise using dart compiler will throw an error in sass-true.
 
 
 
